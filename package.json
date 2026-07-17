@@ -1,12 +1,13 @@
 {
-  "name": "@anthropic-ai/claude-code",
+  "name": "yyyjie",
   "version": "0.0.0-leaked",
-  "description": "Anthropic Claude Code CLI — leaked source (2026-03-31). Not an official release.",
+  "description": "yyyjie AI coding CLI powered by Anthropic Claude models. Not an official Anthropic release.",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
   "main": "src/entrypoints/cli.tsx",
   "bin": {
+    "yyyjie": "src/entrypoints/cli.tsx",
     "claude": "src/entrypoints/cli.tsx"
   },
   "scripts": {
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "@anthropic-ai/vertex-sdk": "^0.7.0",
     "@commander-js/extra-typings": "^13.1.0",
     "@growthbook/growthbook": "^1.4.0",
     "@modelcontextprotocol/sdk": "^1.12.1",
@@ -49,6 +51,7 @@
     "execa": "^9.5.0",
     "figures": "^6.1.0",
     "fuse.js": "^7.0.0",
+    "google-auth-library": "^9.4.2",
     "highlight.js": "^11.11.0",
     "ignore": "^6.0.0",
     "lodash-es": "^4.17.21",

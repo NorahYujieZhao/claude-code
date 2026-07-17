@@ -1995,9 +1995,8 @@ export async function validateForceLoginOrg(): Promise<OrgValidationResult> {
     message:
       `Your authentication token belongs to organization ${tokenOrgUuid},\n` +
       `but this machine requires organization ${requiredOrgUuid}.\n\n` +
-      `Please log in with the correct organization: claude auth login`,
+      `Please log in with the correct organization: yyyjie auth login`,
   }
 }
 
 class GcpCredentialsTimeoutError extends Error {}
-

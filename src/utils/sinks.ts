@@ -1,4 +1,4 @@
-import { initializeAnalyticsSink } from '../services/analytics/sink.js'
+import { OPTIONAL_TELEMETRY_ENABLED } from '../constants/brand.js'
 import { initializeErrorLogSink } from './errorLogSink.js'
 
 /**
@@ -12,6 +12,9 @@ import { initializeErrorLogSink } from './errorLogSink.js'
  */
 export function initSinks(): void {
   initializeErrorLogSink()
-  initializeAnalyticsSink()
+  if (OPTIONAL_TELEMETRY_ENABLED) {
+    void import('../services/analytics/sink.js').then(({ initializeAnalyticsSink }) =>
+      initializeAnalyticsSink(),
+    )
+  }
 }
-

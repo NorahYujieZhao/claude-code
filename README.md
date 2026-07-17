@@ -1,6 +1,9 @@
 <div align="center">
 
-# Claude Code — Leaked Source
+# yyyjie — Claude-powered coding CLI fork
+
+**User-facing CLI/UI branding is yyyjie. Anthropic and Vertex AI protocol
+identifiers are intentionally preserved for compatibility.**
 
 **The full source code of Anthropic's Claude Code CLI, leaked on March 31, 2026**
 
@@ -94,6 +97,7 @@ For in-depth guides, see the [`docs/`](docs/) directory:
 | **[Commands Reference](docs/commands.md)** | All ~85 slash commands organized by category |
 | **[Subsystems Guide](docs/subsystems.md)** | Deep dives into Bridge, MCP, Permissions, Plugins, Skills, Tasks, Memory, Voice |
 | **[Exploration Guide](docs/exploration-guide.md)** | How to navigate the codebase — study paths, grep patterns, key files |
+| **[Vertex AI Setup](docs/vertex-ai.md)** | ADC, project, region, IAM, model access, quota, and error diagnostics |
 
 Also see: [CONTRIBUTING.md](CONTRIBUTING.md) · [MCP Server README](mcp-server/README.md)
 
@@ -472,6 +476,5 @@ This repository archives source code leaked from Anthropic's npm registry on **2
    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=codeaashu/claude-code&type=date&legend=bottom-right" />
  </picture>
 </a>
-
 
 
